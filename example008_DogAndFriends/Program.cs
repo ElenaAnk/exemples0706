@@ -1,23 +1,26 @@
 ﻿int count = 0;
-double distance = 10000;
+int distance = 10000;
 int firstFriendSpeed = 1;
 int secondFriendSpeed = 2;
 int dogSpeed = 5;
-friend = 2;
+int friend = 2;
+int time = 0;
 
 while(distance>10)
 {
-    if(friend = 1)
+    if(friend == 1)
     {
-       time = distanse/(firstFriendSpeed + dogSpeed);
+       time = distance/(firstFriendSpeed + dogSpeed);
        friend = 2;
     }
     else
     {
-        time = distanse/(secondFrienSpeed + dogSpeed);
+        time = distance/(secondFriendSpeed + dogSpeed);
         friend = 1;
     }
-    distanse = distanse - (firstFriendSpeed + secondFriendSpeed) * time;
+    distance = distance - (firstFriendSpeed + secondFriendSpeed) * time;
     count++;
 }
-Console.WriteLine(count);
+Console.Write("Собачка пробежала ");
+Console.Write(count);
+Console.Write(" раз!");
